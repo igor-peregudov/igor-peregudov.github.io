@@ -1,0 +1,542 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    color: #828282;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+a {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #2cc7c1;
+}
+
+a:hover {
+    color: #2cc7c1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+
+
+/*================ Header ===================*/
+
+#header {
+    background: url("../img/1.jpg") center no-repeat;
+    background-size: cover;
+/*    height: 100vh;*/
+    height: 100%;
+    min-height: 500px;
+}
+
+#header h1 {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 31px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#header p {
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.logo {
+    padding: 0 20px;
+}
+
+.section-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.section-row {
+    display: table-row;
+}
+
+.section-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section-center {
+    max-width: 550px;
+    display: inline-block;
+}
+
+.btn {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    transition:  background .5s;
+}
+
+.btn-primary {
+    background: #7ea4e8;
+}
+
+.btn-default {
+    background: #6a7079;
+}
+
+/*================= Speakers =====================*/
+
+#speakers {
+    padding: 90px 0;
+    border-bottom: 2px solid #f0f0f1;
+}
+
+#speakers h2 {
+    color: #a9abad;
+}
+
+.large {
+    font-size: 22px;
+    color: #a9abad;
+    margin-bottom: 20px;
+}
+
+.section-tabs {
+    border: 3px solid #ececec;
+    border-radius: 2px;
+}
+
+.section-tabs .nav-tabs li:not(.active) {
+    background: #ececec;
+}
+
+.section-tabs .nav-tabs.nav-justified li a,
+.section-tabs .nav-tabs.nav-justified li.active a,
+.section-tabs .nav-tabs.nav-justified li.active a:focus,
+.section-tabs .nav-tabs.nav-justified li.active a:hover {
+    border: none;
+    font-family: Ubuntu, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.section-tabs .nav-tabs li.active a {
+    color: #9097a1;
+}
+
+
+.nav-tabs li a {
+    color: #abb1ba;
+}
+
+.section-tabs .tab-content {
+    padding: 25px 20px;
+}
+
+.section-tabs .tab-content ul {
+    padding-left: 10px;
+}
+
+.section-tabs .tab-content ul li {
+    line-height: 30px;
+}
+
+.section-tabs .tab-content ul li i {
+    font-size: 15px;
+    color: #58cfca;
+    margin-right: 10px;
+    
+}
+
+.speakers-head {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.speakers-head h2 {
+    color: #6a7079;
+}
+
+.speakers h3 {
+    color: #777a7d;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Ubuntu, sans-serif;
+}
+
+.speakers-footer {
+    margin-top: 70px;
+}
+
+.item > div {
+    position: relative;
+}
+
+
+.front {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+/*    FOR ie     */
+    left: 50%;
+    margin-left: -70px;
+    cursor: pointer;
+}
+
+.back {
+    width: 140px;
+    height: 140px;
+    background: #6bd8d3;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.back i {
+    line-height: 140px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.item > div:hover .front {
+    opacity: 0.2;
+}
+
+.item > div:hover .back {
+    opacity: 1;
+}
+
+.item > div:hover h3 {
+    color: #2cc7c1;
+}
+
+/*====================== events =========================*/
+
+#events {
+    padding: 90px 0;
+}
+
+.link {
+    text-transform: uppercase;
+    font-style: 17px;
+}
+
+.time {
+    background: #2cc7c1;
+    font-family: Ubuntu, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 25px;
+
+}
+
+.collapse-link {
+    color: #747a84;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.collapse-link:hover {
+    color: #747a84;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.collapse-state {
+    color: #2cc7c1;
+}
+
+.collapse p {
+    color: #999;
+}
+
+.tab-collapse {
+    margin-bottom: 20px;
+}
+
+.row-item {
+    margin-top: 100px;
+}
+
+.carousel-indicators {
+    left: 0;
+    bottom: 10px;
+    margin: 0;
+    margin-left: 20px;
+    width: auto;
+}
+
+.carousel-indicators li {
+    border: 1px solid #65d2ce;
+    background: #fff;
+    height: 12px;
+    width: 12px;
+}
+
+.carousel-indicators li.active {
+    background: #65d2ce;
+    height: 14px;
+    width: 14px;
+}
+
+/*=======================  #form ===========================*/
+#form {
+    padding: 90px 0;
+    background: #f3f3f3;
+}
+
+.section-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 2px;
+    margin-top: 50px;
+}
+
+.section-form input,
+.section-form select {
+    height: 44px;
+    background: #efefef;
+    padding-right: 25px;
+}
+
+.has-success .form-control-feedback {
+    color: #2cc7c1;
+}
+
+.has-success .form-control,
+.section-form input.form-control:focus {
+    border: 2px solid #95e3e0;
+    background: #fff;
+    box-shadow: none;
+}
+
+.form-control-feedback {
+    line-height: 44px;
+    right: 10px;
+}
+
+/*поле select - размер, фон, горизонтальное выравнивание*/
+
+.select2-container--default .select2-selection--single {
+    height: 44px;
+    text-align: left;
+    background: #efefef;
+}
+
+/*вертикальное выравнивание + цвет неактивный*/
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 44px;
+    color: #bebebe;
+}
+
+/*фон откртого поля select*/
+
+.select2-container--open .select2-selection--single {
+    background: #2cc7c1;
+}
+
+/*цвет текста откртого поля select*/
+
+.select2-container--open .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+}
+
+/*выравнивание стрелки*/
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 10px;
+}
+
+/*скрываем placeholder*/
+
+li.select2-results__option:first-child {
+	display: none;
+}
+
+/*фон списка*/
+
+.select2-results__options,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected="true"] {
+	background: #525b64;
+}
+
+/*цвет списка*/
+
+.select2-results__options {
+	color: #2cc7c1;
+}
+
+/*====================== Sponsors =======================*/
+
+#sponsors {
+    background: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#map img {
+    width: 100%;
+}
+
+/*=================== Contacts =======================*/
+
+#contacts {
+    background: #525b64;
+    padding: 70px 0;
+}
+
+#contacts h3,
+#contacts h4 {
+    color: #fff;
+    margin: 0 0 25px;
+}
+
+#contacts h4 {
+    font-size: 20px;
+}
+
+#contacts h3 span {
+    font-weight: 700;
+    
+}
+
+#contacts p {
+    color: #b9bcbf;
+}
+
+#contacts a,
+#contacts .contacts p {
+    font-weight: 500;
+    color: #2cc7c1;
+}
+
+#contacts .contacts p {
+    font-size: 18px;
+}
+
+#contacts a {
+    font-size: 16px;    
+}
+
+#contacts .contacts p i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.social img {
+    margin-right: 20px;
+}
+
+/*====================== Copy =======================*/
+
+#copy {
+    background: #3f464c;
+    padding: 15px 0;
+}
+
+#copy p {
+    margin: 0;
+    color: #7d8083;
+    font-size: 14px;
+    
+}
+
+
+/*=================== Media =======================*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #speakers,
+    #events,
+    #form,
+    #contacts {
+        padding: 20px 0;
+    }
+    .speakers-head,
+    .speakers-footer {
+        margin: 20px 0;
+    }
+    #events {
+        padding: 20px 0;
+    }
+    .row-item {
+        margin-top: 30px;
+    }
+    .row-item-col {
+        margin: 20px 0;
+    }
+    #sponsors {
+        padding: 20px 0 0;
+    }
+    #sponsors img {
+        margin-bottom: 20px;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+	
+}
+
+@media only screen and (max-width : 600px) {
+    
+    #header h1 {
+        padding: 0 20px;
+        font-size: 24px;
+    }
+
+    #header p {
+        padding: 0 20px;
+        margin-bottom: 14px;
+        line-height: normal;
+    }
+    
+    .section-btn {
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
