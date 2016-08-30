@@ -198,7 +198,7 @@ hr {
 .portfolio__item img {
     opacity: 0.5;
     width: 100%;
-    transition: .5s;
+    transition: .3s;
 }
 
 .portfolio__item:hover img {    
