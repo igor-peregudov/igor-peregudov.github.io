@@ -1,0 +1,463 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #7a786b;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 50px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.center-wrapper {
+    padding: 0 15px;
+}
+
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+	background: #FFF;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+#status {
+	background-image: url(../img/preloader.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 200px;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	position: absolute;
+	top: 50%;
+	width: 200px;
+}
+
+/*====================== Top-menu =======================*/
+
+.menu-top .navbar {
+    background: #2a2a2c;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    background-attachment: fixed top;
+}
+
+.menu-top .navbar p {
+    margin-right: 10px;
+}
+
+.menu-top .navbar .phone {
+    vertical-align: middle;
+    display: inline;
+}
+
+.menu-top .navbar .phone p {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.menu-top .navbar .phone p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-top .navbar-inverse .navbar-nav > li > a {
+    font-weight: 300;
+    color: #fff;
+    border-right: 1px solid #575954;
+}
+
+
+.menu-top .navbar-inverse .navbar-nav > li > a:focus,
+.menu-top .navbar-inverse .navbar-nav > li > a:hover,
+.btn-call:hover {
+    background: #3e403b;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/*==================== Main-menu =========================*/
+
+#back-ground {
+    display: block;
+    background: url("../img/bg-head.jpg") center no-repeat;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    padding: 0;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover; 
+}
+
+.home-overlay {
+    background-color: rgba(8, 8, 8, 0.6);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.front-logo {
+    position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	   -moz-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%);
+		 -o-transform: translate(0%, -50%);
+			transform: translate(0%, -50%);
+	padding: 0 15px;
+}
+
+.pos-logo {
+    padding: 50px;
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	height: 50px;
+	width: 50px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+    text-align: center;
+}
+
+.scroll-down p {
+    font-size: 24px;
+}
+
+#back-ground a {
+    color: #fff;
+}
+
+
+/*=================== Service =====================*/
+
+#service h1 {
+    color: #5a5b5d;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#service .protecting {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #5a5b5d;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+#service img {
+    border: 3px solid #b2b2b4;
+    border-radius: 50%;
+}
+
+/*=================== Portfolio ========================*/
+
+#portfolio {
+    background: #f7f7f7;
+    padding: 30px 0;
+}
+
+.border-white {
+    border: 1px solid #fff;
+}
+
+#portfolio img {
+    border: 5px solid #d1d1d1;
+    margin-bottom: 30px;
+}
+
+#portfolio p {
+    margin-bottom: 30px;
+}
+
+#portfolio {
+    margin-bottom: 0;
+}
+
+.portfolio-collapse {
+    display: block;
+}
+
+.portfolio-collapse a {
+    padding: 10px 40px;
+    border: 3px solid #5a5b5d;
+    color: #5a5b5d;
+    text-transform: uppercase;
+    font-size: 22px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.portfolio-collapse a:hover {
+    text-decoration: none;
+    background: #5a5b5d;
+    color: #fff;
+    
+}
+
+/*==================== contacts ===========================*/
+
+#contacts {
+    padding-bottom: 0;
+}
+
+
+#contacts span i {
+    font-size: 40px;
+}
+
+#contacts .net p {
+    font-size: 18px;
+}
+
+#contacts .cta {
+    margin-bottom: 40px;
+}
+
+#contacts .net p.large {
+    font-size: 22px;
+}
+
+#contacts span.large i {
+    font-size: 42px;
+}
+
+#contacts .net p a {
+    color: #5a5b5d;
+    text-decoration: none;
+}
+
+#map {
+    margin-bottom: 0;
+    background: #f7f7f7;
+    padding: 0;
+}
+
+#map > .container-fluid {
+    padding: 0;
+}
+
+section > div.container-fluid {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+footer .row {
+    margin-bottom: 0;
+}
+
+footer .row p {
+    margin-bottom: 0;
+}
+
+.copyright {
+    padding: 10px 0;
+    background: #5a5b5d;
+    color: #fff;
+    line-height: 50px;
+}
+
+#scroll-up {
+    position: fixed;
+    z-index: 999;
+    bottom: 1em;
+    right: 1em;
+    display: none;
+}
+
+#scroll-up a {
+    background-color: rgba(128,128,128,0.5);
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+#scroll-up a:hover {
+    background-color: rgba(153,153,153,0.5);
+    color: #5a5b5d;
+}
+
+
+/*====================== FancyBox =============================*/
+
+.thumb img { 
+    filter: none; /* IE6-9 */ 
+    -webkit-filter: grayscale(0); 
+    border-radius:5px; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    padding:5px; 
+} 
+.thumb img:hover { 
+    filter: gray; /* IE6-9 */ 
+    -webkit-filter: grayscale(1); 
+} 
+.thumb { 
+    padding:5px; 
+} 
+
+/*==================  Media ========================*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    
+	#portfolio .btn-call {
+        width: 100%;
+    }
+    
+    .bottom a {
+        font-size: 13px;
+        display: inline-block;
+    }
+    
+    .bottom p {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .bottom-footer {
+        min-height: 40px;
+    }
+    
+    .menu-top a,
+    .menu-top .navbar .phone p {
+        font-size: 16px;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    .btn-call {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .protecting-pad {
+        margin-bottom: 40px;
+    }
+    #service h1 {
+        color: #5a5b5d;
+        font-weight: 700;
+    }
+
+    #service .protecting {
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #5a5b5d;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    .row {
+        margin-bottom: 0;
+    }
+    
+    section {
+        margin-bottom: 0;
+    }
+    
+    .menu-top a,
+    .menu-top .navbar .phone p {
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    footer nav {
+        display: none;
+    }
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    .btn-call {
+        padding: 7px 10px;
+        font-size: 10px;
+    }
+    
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+}
