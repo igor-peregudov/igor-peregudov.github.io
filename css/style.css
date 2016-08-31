@@ -100,25 +100,27 @@ hr {
     width: 200px;
 }
 
+
 /* ---------------------------------------------- /*
  *Scroll Down
 /* ---------------------------------------------- */
 
 .scroll-down {
-	position: absolute;
-	left: 50%;
-	bottom: 15px;
-	height: 50px;
-	width: 50px;
-	margin-left: -15px;
-	display: block;
-	z-index: 10;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    height: 50px;
+    width: 50px;
+    margin-left: -15px;
+    display: block;
+    z-index: 10;
     text-align: center;
 }
 
 .scroll-down p {
     font-size: 24px;
 }
+
 
 /*========== header =============*/
 
@@ -140,9 +142,10 @@ hr {
     text-align: center;
 }
 
+
 /*=========== 404 ===========*/
 
-.main-header__not-found {
+.not-found {
     background: url(../img/bg.jpg) center no-repeat;
     background-position: 50% 50%;
     padding: 0;
@@ -153,12 +156,34 @@ hr {
     -moz-background-size: cover;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
-.main-header__not-found--tittle {
+.not-found__tittle {
     text-align: center;
-    border: 10px solid #fff;
-    padding: 50px;
+}
+
+.not-found h1 {
+    font-size: 170px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.not-found h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.not-found a {
+    font-size: 24px;
+    border: 5px solid #fff;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.not-found a:hover {
+    border: 5px solid #CF000F;;    
 }
 
 /*======= portfolio ========*/
@@ -201,7 +226,7 @@ hr {
     transition: .3s;
 }
 
-.portfolio__item:hover img {    
+.portfolio__item:hover img {
     opacity: 1;
     transform: scale(1.1);
 }
