@@ -133,8 +133,14 @@ hr {
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .main-header__tittle {
@@ -154,8 +160,14 @@ hr {
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden;
 }
 
@@ -213,7 +225,9 @@ hr {
     color: #fff;
     font-size: 1.8rem;
     margin: 0;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -223,12 +237,15 @@ hr {
 .portfolio__item img {
     opacity: 0.5;
     width: 100%;
+    -webkit-transition: .3s;
     transition: .3s;
 }
 
 .portfolio__item:hover img {
     opacity: 1;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .portfolio__item:hover h5 {
@@ -244,13 +261,18 @@ hr {
 }
 
 .social__icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     font-size: 4.8rem;
     color: #333;
     list-style: none;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 
 .social__icon a {
@@ -273,9 +295,16 @@ hr {
 .main-footer__contacts {
     list-style: none;
     padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 
 
