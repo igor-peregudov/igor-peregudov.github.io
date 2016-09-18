@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
   $('.ai').viewportChecker({
       classToAdd: 'ai-animate',
       from: 0,
-      offset: 150,
+      offset: 120,
       callbackFunction: function(elem, action){
 		$(".ai-per").spincrement({
             to: 70,
@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
     $('.ps').viewportChecker({
       classToAdd: 'ps-animate',
         from: 0,
-        offset: 150,
+        offset: 120,
         callbackFunction: function(elem, action){
 		$(".ps-per").spincrement({
             to: 85,
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
     $('.ux').viewportChecker({
       classToAdd: 'ux-animate',
         from: 0,
-        offset: 150,
+        offset: 120,
         callbackFunction: function(elem, action){
 		$(".ux-per").spincrement({
             to: 75,
