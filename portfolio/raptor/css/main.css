@@ -502,7 +502,7 @@ li {
   outline: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .phone__btn:focus,
@@ -857,31 +857,29 @@ a:active {
 }
 
 /**********************
-* sidebar
-**********************/
-/**********************
-* forms
-**********************/
-/**********************
 * buttons
 **********************/
 .scroll-down {
   position: absolute;
   left: 50%;
-  bottom: 15px;
+  bottom: 60px;
   display: block;
   z-index: 10;
   text-align: center;
+    opacity: 0.5;
 }
 
-.scroll-down__anim {
-  display: inline-block;
-  height: 100px;
+.scroll-down:hover {
+    opacity: 1;
 }
 
 /**********************
 * carousel
 **********************/
+
+.carousel {
+    margin-bottom: 5px;
+}
 .owl-item {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -918,9 +916,6 @@ a:active {
   opacity: 1;
 }
 
-/**********************
-* dropdown
-**********************/
 /**********************
 * modal
 **********************/
@@ -1010,12 +1005,6 @@ a:active {
   font-style: italic;
 }
 
-/**********************
-* contacts
-**********************/
-/**********************
-* contacts
-**********************/
 /**********************
 * MEDIA
 **********************/
