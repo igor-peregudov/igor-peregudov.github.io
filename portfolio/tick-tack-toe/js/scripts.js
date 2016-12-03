@@ -68,6 +68,7 @@ $(document).ready(function () {
             $("td").unbind("click");
         }else if (count == 10) {
             $("td").empty();
+            $("td").unbind("click");
             setTimeout(function(){
             td1.eq(0).html("N");
             td1.eq(1).html("O");
