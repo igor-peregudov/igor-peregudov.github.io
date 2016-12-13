@@ -75,7 +75,24 @@ $(document).ready(function () {
         var triangleBot = $(".exp__triangle--bot");
         
         
-        
+        if ($(window).width() < 768) {
+            tank.on("click", function(){
+                var positionTop = $(this).position().top;
+
+                calc.css({
+                    "display": "block",
+                    "top": positionTop + $(this).height() + 30,
+                    "left": 0
+                })
+                triangle.css({
+                    "display":"block",
+                    left: calc.width() / 2
+                })
+                triangleBot.css({
+                    "display": "none"
+                })
+            })
+        };
                 
         if ($(window).width() > 768){
             
@@ -149,16 +166,12 @@ $(document).ready(function () {
         }}
     });
     
-    if ($(window).width() < 768) {
-        tank.on("click", function(){
-            var positionTop = $(this).position().top;
-            
-            calc.css({
-                "display": "block",
-                "top": positionTop + $(this).height() + 30
-            })
-            
-        })
-    };
+    
+    $(window).resize(function(){
+        calc.hide();
+        
+    });
+    
+    
     
 });
