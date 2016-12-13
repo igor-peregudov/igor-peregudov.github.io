@@ -149,15 +149,6 @@ $(document).ready(function () {
         }}
     });
     
-    
-    $(document).mouseup(function (e){
-		
-		if (!calc.is(e.target)
-		    && calc.has(e.target).length === 0) {
-			calc.hide();
-		}
-	});
-    
     if ($(window).width() < 768) {
         tank.on("click", function(){
             var positionTop = $(this).position().top;
