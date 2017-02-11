@@ -1,0 +1,130 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    text-align: left;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.htmltag {
+    color: #8959a8;
+}
+
+h1 {
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    font-style: italic !important;
+    text-align: left;
+    margin-bottom: 50px !important;
+    position: relative;
+}
+
+h1:after {
+    content: '';
+    width: 150px;
+    height: 7px;
+    background-color: #db3a35;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+}
+
+h2 {
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    text-align: left;
+    margin-bottom: 30px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+    text-align: right;
+}
+
+p, li, q {
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    text-align: justify;
+    line-height: 1.7 !important;
+    font-style: normal !important;
+}
+
+pre {
+    color: #c82829 !important;
+    background-color: #f7f2ed !important;
+    padding: 20px !important;
+    width: 100% !important;
+    font-size: 24px !important;
+    margin: 0 !important;
+    margin-bottom: 30px !important;
+    border: none !important;
+}
+
+li {
+    margin-bottom: 10px !important;
+}
+
+.code {
+    font-size: 24px !important;
+    color: #c82829 !important;
+    background-color: #f7f2ed !important;
+    display: inline-block;
+    padding: 0 10px !important;
+    border-radius: 5px;
+}
+
+.comment {
+    color: #8e908c;
+    display: inline-block;
+}
+
+.reveal .controls div.navigate-right {
+    border-left-color: #000;
+}
+.reveal .controls div.navigate-left {
+    border-right-color: #000;
+}
+.reveal .controls div.navigate-up {
+    border-bottom-color: #000;
+}
+.reveal .controls div.navigate-down {
+    border-top-color: #000;
+}
+
+.site-search {
+    /* стили */
+}
+.site-search--large {
+    /* стили */
+}
+.site-search__field {
+    /* стили */
+}
+.site-search__button {
+    /* стили */
+}
+
+
+
+
+
+.site-search {
+    /* стили */
+    &--large {
+        /* стили */
+    }
+    &__field {
+        /* стили */
+    }
+    &__button {
+        /* стили */
+    }
+}

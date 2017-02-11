@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>BEM и CSS препроцессоры</title>
+
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!--		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+       
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500i,900i&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/reveal.css">
+       <link rel="stylesheet" href="css/main.css">
+        
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Каждый блок <section> - это отдельный слайд -->
+			<div class="slides">
+				<section>
+				    <h1>BEM нейминг и CSS препроцессоры</h1>
+					<h2>Делаем верстку более приятной и легкомасштабируемой</h2>
+					<img src="images/2.jpg" alt="" style="float:left;">
+				</section>
+
+				<section>
+					<h1>Цель презентации</h1>
+					<p>Цель презентации не раскрыть все возможности BEM методологии и препроцессоров CSS. В первую очередь хочется показать некоторые преимущества использования этих инструментов для удобной и легко масштабируемой верстки, а также привести к единому стандарту написание HTML и CSS.</p><p>Предложения по улучшению данного подхода приветствуются.</p>
+				</section>
+
+				<!-- Примеры с вертикальными слайдами -->
+				<section>
+						<h1>Что такое BEM?</h1>
+						
+                        <p class="fragment">BEM (Блок Элемент Модификатор) - это методология именования, изобретённая парнями из Яндекса. Это изящный путь именования классов с целью сделать их понятнее и прозрачнее для других разработчиков.</p>
+				</section>
+
+				<section>
+				    
+				
+					<h2>Система именования по BEM использует следующий шаблон:</h2>
+					<pre>
+.block{}
+.block__element{}
+.block--modifier{}</pre>
+                <ul class="fragment">
+                    <li><div class="code">.block</div> — самый высокий уровень абстракции компонента.</li>
+                    <li><div class="code">.block__element</div> — дочерний элемент <div class="code">.block</div> помогающий поддерживать его целостность.</li>
+                    <li><div class="code">.block--modifier</div> — другое состояние или версия <div class="code">.block</div>.</li>
+                </ul>
+                <p class="fragment">
+                    Двойные символы в именовании используются потому, что сам класс может быть разделен дефисом
+                    <pre class="fragment">
+.site-search{} <div class="comment">/* Блок */</div>
+.site-search__field{} <div class="comment">/* Элемент */</div>
+.site-search--full{} <div class="comment">/* Модификатор */</div>
+                    </pre>
+                </p>
+				</section>
+
+				<section>
+					<h2 style="margin-bottom: 50px !important;">Наглядная картинка с их <a href="https://ru.bem.info/" target="_blank">сайта</a>.</h2>
+					<img src="images/bem__1.png" alt="">
+				</section>
+
+				<section>
+					<h2>Рассмотрим пример формы поиска на сайте:</h2>
+					<pre><code><form class="site-search large">
+    <input type="text" class="field">
+    <input type="Submit" value ="Search" class="button">
+</form></code></pre>
+            <p class="fragment">Это обычные классы, по ним много не скажешь. Да, мы вполне можем так работать, но с БЭМ мы получим:</p>
+            <pre class="fragment"><code><form class="site-search site-search--large">
+    <input type="text" class="site-search__field">
+    <input type="Submit" value ="Search" class="site-search__button">
+</form></code></pre>
+            <p class="fragment">Теперь видно, что у нас есть блок названный <span class="code">.site-search</span>, у которого есть вложенный элемент <span class="code">.site-search__field</span>. Также наглядно видно, что существует модификация блока  <span class="code">.site-search</span> имеющая свой собственный класс <span class="code">.site-search--large</span>.</p>
+				</section>
+
+				<section>
+					<img src="images/3.jpg" style="width: 100%;" alt="">
+				</section>
+
+				<section>
+					<h1>Что такое препроцессоры CSS</h1>
+					<p class="fragment">
+					    Препроцессоры компилируют код, который мы пишем на препроцессорном языке в чистый CSS.
+					    Препроцессоры экономят наше время и делаю многие рутинные вещи за нас благодаря своим особенностям, таким как: вложенные селекторы, математические функции, ссылки на родительский селектор и даже сообщения об ошибках, которые говорят нам где и почему произошла ошибка в коде.
+					</p>
+					<p class="fragment">Рассмотрим преимущества использования методологии BEM в связке с препроцессором.</p>
+				</section>
+
+				<section>
+					<h2>Возьмём нашу форму из <a href="#/5">5 слайда</a>:</h2>
+					<pre><code><form class="site-search site-search--large">
+    <input type="text" class="site-search__field">
+    <input type="Submit" value ="Search" class="site-search__button">
+</form></code></pre>
+            <p class="fragment">И зададим ей стили:</p>
+            <pre class="fragment"><code>.site-search {
+    /* стили */
+}
+.site-search--large {
+    /* стили */
+}
+.site-search__field {
+    /* стили */
+}
+.site-search__button {
+    /* стили */
+}</code></pre>
+				</section>
+
+				<section>
+					<p>Теперь каждый блок имеет логическое наименование.</p>
+					<p>Однако мы нарушаем всеми нами любимый <a href="https://ru.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself" target="_blank">принцип</a>...</p>
+				</section>
+
+				<section>
+					<h2>Посмотрим теперь, как будет выглядеть CSS с использованием препроцессора (Less):</h2>
+					<pre class="fragment"><code>.site-search {
+    /* стили */
+    &--large {
+        /* стили */
+    }
+    &__field {
+        /* стили */
+    }
+    &__button {
+        /* стили */
+    }
+}</code></pre>
+				</section>
+
+				<section>
+					<h2>На выходе получаем аналогичный CSS код:</h2>
+					<pre class="fragment"><code>.site-search {
+    /* стили */
+}
+.site-search--large {
+    /* стили */
+}
+.site-search__field {
+    /* стили */
+}
+.site-search__button {
+    /* стили */
+}</code></pre>
+				</section>
+
+				<section>
+					<h2>Данный подход обеспечивает следующие преимущества:</h2>
+					<ul>
+					    <li class="fragment">CSS код становится более удобным для чтения;</li>
+					    <li class="fragment">Мы явно видим принадлежность класса к определенному блоку;</li>
+					    <li class="fragment">Мы не повторяемся;</li>
+					    <li class="fragment">Писать такой CSS реально быстро и приятно;</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Выводы</h1>
+					<p class="fragment">Я рассказал очень поверхностно о BEM методологии и препроцессорах CSS, в одной презентации очень сложно покрыть все аспекты разработки по BEM, а также все нюансы и возможности работы с препроцессорами, но такая цель и не стояла передо мной.</p>
+					<p class="fragment">Я хотел разжечь интерес у тех, кому доводится верстать сайты, показать, что этим можно заниматься в удовольствие и предложить стандарт для написания HTML и CSS, код которого будет легко масштабироваться и понятен человеку.</p>
+				</section>
+
+				<section>
+					<h1>Ссылки</h1>
+					<ul class="fragment">
+					    <li><a href="https://ru.bem.info/" target="_blank">BEM</a></li>
+					    <li><a href="https://sass-scss.ru/" target="_blank">Sass(SCSS) препроцессор</a></li>
+					    <li><a href="http://lesscss.org/" target="_blank">Less препроцессор</a></li>
+					</ul>
+					<h3 class="fragment">Ссылки привел только на то, чем пользовался сам.</h3>
+				</section>
+				<section>
+                <div style="text-align: center;"><img src="images/4.jpg" alt="" ></div>
+				    
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme,
+				transition: Reveal.getQueryHash().transition || 'default',
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+	</body>
+</html>
