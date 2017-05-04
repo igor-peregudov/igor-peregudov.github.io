@@ -70,8 +70,7 @@ window.onload = function() {
                     offset: offsetPost,
                     filter: 'owner',
                     v: '5.63',
-                    extended: 1,
-                    access_token: '681989506819895068abf4875068404061668196819895030b03a7eac2a98095f8d74d2'
+                    extended: 1
                 }
             }else {
                 domain = linkValue.replace(/.*vk\.com\//g, '');
@@ -81,8 +80,7 @@ window.onload = function() {
                     offset: offsetPost,
                     filter: 'owner',
                     v: '5.63',
-                    extended: 1,
-                    access_token: '681989506819895068abf4875068404061668196819895030b03a7eac2a98095f8d74d2'
+                    extended: 1
                 }
             }
             getWallPosts(offsetPost);
