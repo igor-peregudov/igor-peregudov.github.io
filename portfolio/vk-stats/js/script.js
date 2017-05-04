@@ -4,7 +4,11 @@ window.onload = function() {
         apiId: 5884209
     });
     
-    window.location.href = 'https://oauth.vk.com/authorize?client_id=5884209&display=popup&redirect_uri=https://igor-peregudov.github.io/portfolio/vk-stats/index.html&scope=groups&response_type=token&v=5.63&state=good';
+    if(window.location.href.indexOf('access_token') === -1){
+        window.location.href = 'https://oauth.vk.com/authorize?client_id=5884209&display=popup&redirect_uri=https://igor-peregudov.github.io/portfolio/vk-stats/index.html&scope=groups&response_type=token&v=5.63&state=good';
+    }
+    
+    
     
     var groupName;
     var groupAvatar;
