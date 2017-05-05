@@ -8,26 +8,10 @@ window.onload = function() {
     
     var ajax = {};
     ajax.x = function () {
-        if (typeof XMLHttpRequest !== 'undefined') {
-            return new XMLHttpRequest();
-        }
-        var versions = [
-            "MSXML2.XmlHttp.6.0",
-            "MSXML2.XmlHttp.5.0",
-            "MSXML2.XmlHttp.4.0",
-            "MSXML2.XmlHttp.3.0",
-            "MSXML2.XmlHttp.2.0",
-            "Microsoft.XmlHttp"
-        ];
+        var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
-        var xhr;
-        for (var i = 0; i < versions.length; i++) {
-            try {
-                xhr = new ActiveXObject(versions[i]);
-                break;
-            } catch (e) {
-            }
-        }
+        var xhr = new XHR();
+        
         return xhr;
     };
 
