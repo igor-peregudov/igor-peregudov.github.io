@@ -8,7 +8,7 @@ window.onload = function() {
     
     var ajax = {};
     ajax.x = function () {
-        var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+        var XHR = window.XDomainRequest || window.XMLHttpRequest;
 
         var xhr = new XHR();
         
