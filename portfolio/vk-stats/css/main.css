@@ -216,6 +216,7 @@ h1 {
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 21px;
+  white-space: pre;
 }
 
 .date {
