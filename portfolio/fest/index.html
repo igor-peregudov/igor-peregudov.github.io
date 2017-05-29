@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Воздушный сюрприз от крылатого феста</title>
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section class="main-page">
+        <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="buttons-wrap">
+            <div class="btn dark">
+                <input type="button" class="dark" value="Играть" id="play"> </div>
+            <div class="btn">
+                <input type="button" class="bright" value="Правила" id="rules"> </div>
+        </div>
+        <div id="viewport">
+            <div id="world"></div>
+        </div>
+    </section>
+    <div class="popup-rules">
+        <div class="close"></div>
+        <div class="popup-rules-wrapper">
+            <h3>
+               правила игры
+                   </h3>
+            <p>2.1. Исполнитель обязуется:</p>
+            <p>2.1.1. Оказывать услуги в полном соответствии с условиями настоящего Договора и Приложений к нему.</p>
+            <p>2.1.2. Своевременно и в полном объеме сообщать Заказчику обо всех обстоятельствах, препятствующих или делающих невозможным оказание услуг по Договору и Приложениям к нему.</p>
+            <p>2.1.3. В случае если в ходе оказания услуг по соответствующему Приложению к Договору у Исполнителя возникнет необходимость предоставлять на утверждение Заказчика информацию и/или документы и/или материалы, то Исполнитель предоставляет их в порядке и сроки, согласованные Сторонами в соответствующем Приложении к Договору.</p>
+            <p>2.1.4. Согласовывать с Заказчиком макеты рекламных материалов и/или рабочие версии аудиовизуальных произведений, которые были изготовлены или откорректированы Исполнителем.</p>
+            <p>2.1.5. В срок не позднее 5 (Пяти) рабочих дней с момента окончания оказания услуг направить в адрес Заказчика 2 (Два) экземпляра Акта, подписанных со стороны Исполнителя.</p>
+            <p>2.2. Исполнитель вправе:</p>
+            <p>2.2.1. Привлекать третьих лиц для оказания услуг по Договору, оставаясь ответственным перед Заказчиком за действия таких третьих лиц, как за свои собственные.</p>
+            <p>2.3. Заказчик обязуется:</p>
+            <p>2.3.1. Рассмотреть Акт в течение 15 (Пятнадцати) рабочих дней с момента его представления Исполнителем, и при отсутствии возражений к оказанным услугам подписать такой Акт и направить в адрес Исполнителя 1 (Один) подписанный экземпляр Акта, а при наличии возражений направить в адрес Исполнителя мотивированный письменный отказ от подписания Акта и согласовать с Исполнителем сроки и порядок устранения обоснованных недочетов и недостатков в оказанных услугах, а также порядок урегулирования возникших претензий. В указанном случае Стороны составляют двухсторонний акт с перечнем необходимых доработок и сроков их выполнения и/или содержащий порядок урегулирования возникших претензий. В случае если по истечении 15 (Пятнадцати) рабочих дней с момента получения от Исполнителя Акта, Заказчик не подписал Акт и не направил в адрес Исполнителя мотивированный письменный отказ от подписания Акта, оказанные Исполнителем услуги считаются принятыми Заказчиком без замечаний, а соответствующий Акт подписанным Заказчиком без возражений. </p>
+            <p>2.3.2. Оплачивать услуги Исполнителя в порядке и в сроки, установленные в настоящем Договоре и Приложениях к нему.</p>
+            <p>2.4. Заказчик вправе:</p>
+            <p>2.4.1. Проверять ход и качество оказания услуг, не вмешиваясь в профессиональную деятельность Исполнителя.</p>
+            <p>2.4.2. Требовать от Исполнителя предоставления информации о ходе оказания услуг.</p>
+            <p>2.4. Заказчик вправе:</p>
+            <p>2.4.1. Проверять ход и качество оказания услуг, не вмешиваясь в профессиональную деятельность Исполнителя.</p>
+        </div>
+    </div>
+    <div id="popup-all" class="popup-all">
+        <div class="popup-wrap popup-3 hide">
+            <div class="popup-text">
+                <h1>третий маневр</h1>
+                <p>Жди пока администратор свяжется с тобой и получи биллет на крылатый фест. С полными правилами игры вы можете ознакомится <a href="javascript:void(0)" class="rules">тут</a></p>
+                <div class="btn dark">
+                    <input type="button" class="dark popup-btn-agree" value="согласен"> </div>
+            </div> <img class="popup-image" src="img/plane-3.png" alt="">
+            <h3 class="popup-number">3/3</h3> </div>
+        <div class="popup-wrap popup-2 hide">
+            <div class="popup-text">
+                <h1>второй маневр</h1>
+                <p>Сделай репост записи с результатами на страницу Вконтакте/Facebook и сохрани его до 11 июня.</p>
+                <div class="btn dark">
+                    <input type="button" class="dark popup-btn-next" value="далее"> </div>
+            </div> <img class="popup-image" src="img/plane-2.png" alt="">
+            <h3 class="popup-number">2/3</h3> </div>
+        <div class="popup-wrap popup-1 hide">
+            <div class="popup-text">
+                <h1>первый маневр</h1>
+                <p>Проведи самолёт через воздушные преграды и набери 6000 очков.</p>
+                <div class="btn dark">
+                    <input type="button" class="dark popup-btn-next" value="далее"> </div>
+            </div> <img class="popup-image" src="img/plane-1.png" alt="">
+            <h3 class="popup-number">1/3</h3></div>
+    </div>
+    <div class="popup-score">
+        <div class="close"></div>
+        <div class="popup-score-wrapper">
+            <h3>Таблица результатов</h3>
+            <table>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+                <tr>
+                    <td class="avatar">
+                        <div style="background-image:url(https://leonardo.osnova.io/cbd68222-239d-e733-e8af-f6ebcfda1731/);"></div>
+                    </td>
+                    <td class="name">Иван иванов</td>
+                    <td class="rating">1000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="menu">
+        <p>Pour votre santé, évitez de grignoter entre les repas - www.mangerbouger.fr</p>
+        <div class="menu-link"><a href="#">Линк 1</a> <a href="#">Линк 2</a> <a href="#">Линк 3</a> <a href="javascript:void(0)" class="score">Таблица</a>
+            
+        </div>
+        <p>© 2017 The Coca‑Cola Company.</p>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
