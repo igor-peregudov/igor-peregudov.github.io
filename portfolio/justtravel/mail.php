@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (isset($_GET['formData'])) {$formData = $_GET['formData'];}
 //    var_dump($_GET);
  
-    $to = "Jt.minsk@gmail.com, igor.peregudov93@gmail.com";
+    $to = "Jt.minsk@gmail.com";
     $sendfrom   = "JUST-TRAVEL"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
