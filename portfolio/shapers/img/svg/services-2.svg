@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-49 172.9 496 496" style="enable-background:new -49 172.9 496 496;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B5B5B5;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st0" d="M-49,172.9v400H87v-16H-33v-304h464v304H311v16h136v-400L-49,172.9L-49,172.9z M431,236.9H-33v-48h464V236.9
+				z"/>
+			<rect x="-17" y="204.9" class="st0" width="16" height="16"/>
+			<rect x="15" y="204.9" class="st0" width="16" height="16"/>
+			<rect x="47" y="204.9" class="st0" width="16" height="16"/>
+			<path class="st0" d="M279,554.9c35.2-25.6,56-66.4,56-110c0-75-61-136-136-136s-136,61-136,136c0,43.6,20.8,84.4,56,110v2h-16v16
+				h16v16h-16v16h16v16h-16v16h16v32h160v-32h16v-16h-16v-16h16v-16h-16v-16h16v-16h-16V554.9z M263,652.9H135v-16h128V652.9z
+				 M263,620.9H135v-16h128V620.9z M263,588.9H135v-16h128V588.9z M266.5,544.1l-3.5,2.4v10.4h-56v-64.7c22.7-3.8,40-23.5,40-47.3
+				c0-26.5-21.5-48-48-48s-48,21.5-48,48c0,23.7,17.3,43.4,40,47.3v64.7h-56v-10.4l-3.5-2.4C98.6,521.7,79,484.6,79,444.9
+				c0-66.2,53.8-120,120-120s120,53.8,120,120C319,484.6,299.4,521.7,266.5,544.1z M199,476.9c-17.6,0-32-14.4-32-32s14.4-32,32-32
+				s32,14.4,32,32S216.6,476.9,199,476.9z"/>
+			<rect x="263" y="436.9" class="st0" width="16" height="16"/>
+			<rect x="119" y="436.9" class="st0" width="16" height="16"/>
+			<rect x="191" y="268.9" class="st0" width="16" height="24"/>
+			
+				<rect x="109" y="290.8" transform="matrix(0.8661 -0.4999 0.4999 0.8661 -135.7133 99.0306)" class="st0" width="16" height="24"/>
+			<rect x="45" y="354.9" transform="matrix(0.8661 0.4999 -0.4999 0.8661 189.0168 20.1207)" class="st0" width="24" height="16"/>
+			<rect x="23" y="436.9" class="st0" width="24" height="16"/>
+			
+				<rect x="48.9" y="514.9" transform="matrix(0.4999 0.8661 -0.8661 0.4999 484.7879 214.165)" class="st0" width="16" height="24"/>
+			
+				<rect x="329" y="518.9" transform="matrix(-0.8661 -0.4999 0.4999 -0.8661 372.9311 1153.6659)" class="st0" width="24" height="16"/>
+			<rect x="351" y="436.9" class="st0" width="24" height="16"/>
+			
+				<rect x="333" y="350.9" transform="matrix(-0.4999 -0.8661 0.8661 -0.4999 197.1981 839.6815)" class="st0" width="16" height="24"/>
+			<rect x="269" y="294.8" transform="matrix(0.5 -0.866 0.866 0.5 -121.7704 394.721)" class="st0" width="24" height="16"/>
+		</g>
+	</g>
+</g>
+</svg>
