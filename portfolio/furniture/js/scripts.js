@@ -17,9 +17,10 @@ $(document).ready(function(){
         type: 'image',
         tLoading: 'Загрузка...',
         mainClass: 'mfp-img-mobile',
+        closeBtnInside: false,
+        closeOnContentClick: true,
         gallery: {
             enabled: true,
-            navigateByImgClick: true,
             preload: [0,1],
             tCounter: '<span class="mfp-counter">%curr% из %total%</span>',
             tNext: 'Следующая фотография',
@@ -88,4 +89,12 @@ $(document).ready(function(){
             $('.menu').removeClass('active');
         }
     });
+    
+    $('#menu__wrap a, a.main-screen__btn').on('click', function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
 });

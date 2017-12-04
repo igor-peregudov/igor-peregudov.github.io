@@ -654,10 +654,6 @@ nav {
   cursor: auto !important;
 }
 
-button.mfp-close {
-  display: none;
-}
-
 /**********************
 * typography
 **********************/
@@ -753,7 +749,7 @@ a {
   margin-bottom: 55px;
 }
 
-.main-screen button {
+.main-screen__btn {
   font-size: 12px;
   font-family: 'MuseoSansCyrl-700';
   font-weight: 700;
@@ -772,9 +768,10 @@ a {
   outline-color: transparent;
   z-index: 5;
   position: relative;
+  text-decoration: none;
 }
 
-.main-screen button:hover {
+.main-screen__btn:hover {
   background-color: #ff8400;
 }
 
@@ -1317,6 +1314,11 @@ nav .logo {
   color: #fff;
 }
 
+.cta__desc p {
+  font-size: 16px;
+  font-family: 'MuseoSansCyrl-300';
+}
+
 .cta .form {
   max-width: 300px;
   width: 100%;
@@ -1694,7 +1696,7 @@ nav .logo {
   .main-screen p {
     font-size: 16px;
   }
-  .main-screen button {
+  .main-screen__btn {
     height: 40px;
     padding: 0;
     line-height: 30px;
