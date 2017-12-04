@@ -1676,8 +1676,8 @@ nav .logo {
     width: 100%;
     background-size: cover;
   }
-  .mfp-content {
-    margin: 50px;
+  .portfolio__img__item:after, .portfolio__img__item:before {
+    display: none;
   }
   nav .logo {
     max-width: 100px;
@@ -1798,6 +1798,7 @@ nav .logo {
   }
   .advantages__item {
     max-width: 100%;
+    margin: 15px;
   }
   .partners__item {
     width: 100%;
