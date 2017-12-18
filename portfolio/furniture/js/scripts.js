@@ -15,10 +15,13 @@ $(document).ready(function(){
         url: "../mail.php",
         data: $(this).serialize(),
         error: function() {
-            console.log("Ошибка!");
+            $('.form__popup.form__popup--error').addClass('active').delay(2000).queue(function(){
+                $(this).removeClass('active');
+                $.dequeue(this);
+            });
         },
         success: function() {
-            $('.form__popup').addClass('active').delay(2000).queue(function(){
+            $('.form__popup.form__popup--success').addClass('active').delay(2000).queue(function(){
                 $(this).removeClass('active');
                 $.dequeue(this);
             });

@@ -405,8 +405,11 @@
                 <label for="tel">ваш ТЕЛЕФОН
                     <input type="tel" name="tel" pattern="^[0-9\+\(\)\s-]+$" required placeholder="+375 (29) 111-11-11" /> </label>
                 <button type="submit">Отправить</button>
-                <div class="form__popup">
+                <div class="form__popup form__popup--success">
                     Спасибо за заявку! Мы скоро свяжемся с Вами...
+                </div>
+                <div class="form__popup form__popup--error">
+                    Ошибка сервера... Позвоните по телефону.
                 </div>
             </form>
         </div>
