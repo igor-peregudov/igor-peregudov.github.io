@@ -15,6 +15,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -29,7 +31,7 @@
             <nav>
                 <a href="/" class="logo"><img src="img/logo-w.png" alt=""></a>
                 <div class="menu"> <div class="menu__wrap" id="menu__wrap"><a href="#portfolio" class="menu__link">Портфолио</a> <a href="#advantages" class="menu__link">Преимущества</a> <a href="#partners" class="menu__link">Партнеры</a> <a href="#footer" class="menu__link">Контакты</a> </div></div>
-                <a href="tel:+375 29 313 23 90" class="menu__phone"> <i class="icon-phone"></i> +375 29 313 23 90</a>
+                <a href="tel:+375291073461" class="menu__phone"> <i class="icon-phone"></i>+375 (29) 107-34-61</a>
             </nav>
         </div>
     </header>
@@ -401,15 +403,18 @@
                 <label for="name">ваше имя
                     <input type="text" name="name" required placeholder="Александр" /> </label>
                 <label for="tel">ВАШ ТЕЛЕФОН
-                    <input type="tel" name="tel" pattern="[0-9]*" required placeholder="+375 (29) 111-11-11" /> </label>
+                    <input type="tel" name="tel" pattern="^[0-9\+\(\)\s-]+$" required placeholder="+375 (29) 111-11-11" /> </label>
                 <button type="submit">Отправить</button>
+                <div class="form__popup">
+                    Спасибо за заявку! Мы скоро свяжемся с Вами...
+                </div>
             </form>
         </div>
     </section>
     <footer class="footer" id="footer">
         <div class="container">
             <a href="/" class="footer__logo"> <img src="img/logo-b.png" alt=""> </a>
-            <a href="tel:+375 29 313 23 90" class="footer__phone"> <i class="icon-phone"></i> +375 29 313 23 90</a>
+            <a href="tel:+375291073461" class="footer__phone"> <i class="icon-phone"></i>+375 (29) 107-34-61</a>
             <div class="main-screen__social">
                 <a target="_blank" href="https://www.facebook.com/dima.semikozov" class="icon-facebook"></a>
                 <a target="_blank" href="https://www.instagram.com/4room_s_mebel/" class="icon-instagram"></a>

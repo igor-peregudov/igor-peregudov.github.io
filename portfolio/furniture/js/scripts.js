@@ -4,7 +4,28 @@
 //});
 
 
-$(document).ready(function(){  
+$(document).ready(function(){
+    
+    
+    $("#cta form").submit(function(e) {
+//        e.preventDefault();
+    $.ajax({
+        type: "GET",
+        context: this,
+        url: "../mail.php",
+        data: $(this).serialize(),
+        error: function() {
+            console.log("Ошибка!");
+        },
+        success: function() {
+            $('.form__popup').addClass('active').delay(2000).queue(function(){
+                $(this).removeClass('active');
+                $.dequeue(this);
+            });
+        }
+    });
+        return false;
+    });
     
     var swiper = new Swiper('.philosophy__slider', {
         pagination: {
