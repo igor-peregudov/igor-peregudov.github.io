@@ -1,353 +1,430 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JustTravel - Туры и отдых в Турции, Болгарии, Египте, Испании, Греции, Вьетнаме</title>
-    <meta name="description" content="Горящие туры, популярные курорты и лучшие отели, лучшие цены. Турция, Болгария, Египет, Испания, Греция, Вьетнам вместе с JustTravel">
-    <meta property="og:title" content="JustTravel - Туры и отдых в Турции, Болгарии, Египте, Испании, Греции, Вьетнаме" />
-    <meta property="og:description" content="Горящие туры, популярные курорты и лучшие отели, лучшие цены. Турция, Болгария, Египет, Испания, Греция, Вьетнам вместе с JustTravel">
-    <meta property="og:url" content="http://j-t.by/" />
-    <meta property="og:image" content="http://j-t.by/img/justtravel.jpg" />
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700|Roboto:900" rel="stylesheet">
+    <title>Корпусная мебель под заказ, кухни, шкафы-купе от 4room</title>
+	<meta itemprop="description" content="Закажите уникальную мебель, с гарантией качества! Разрабатываем функциональную среду на кухне, в гостиной, прихожей и кабинете.">
     <link href="css/fontello.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header-top">
+    <!-- Preloader -->
+<!--
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+-->
+    <header>
         <div class="container">
-            <div class="row">
-                <div class="header-top--wrap">
-                    <a href="/" class="logo-link">
-                        <div alt="JustTrevel" class="logo"></div>
-                    </a>
-                    <div class="mobile-menu_btn"> <i class="carret"></i> <i class="carret"></i> <i class="carret"></i> </div>
-                    <nav class="top-menu">
-                        <ul>
-                            <li><a href="#about-us">О компании</a></li>
-                            <li><a href="#hot-tour">Горящие туры</a></li>
-                            <li><a href="#advantages">Преимущества</a></li>
-                            <li><a href="#calculator">Подобрать тур</a></li>
-                            <li><a href="#response">Отзывы</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
-                            <li class="only-mobile-number"><a href="tel:+375 (25) 771-26-57">+375 (25) <span class="bold">771-26-57</span></a></li>
-                        </ul>
-                    </nav> <span class="number-top">
-                          <a href="tel:+375 (25) 771-26-57">+375 (25) <span class="bold">771-26-57</span></a>
-                    </span>
-                </div>
-            </div>
+            <nav>
+                <a href="/" class="logo"><img src="img/logo-w.png" alt=""></a>
+                <div class="menu"> <div class="menu__wrap" id="menu__wrap"><a href="#portfolio" class="menu__link">Портфолио</a> <a href="#advantages" class="menu__link">Преимущества</a> <a href="#partners" class="menu__link">Партнеры</a> <a href="#footer" class="menu__link">Контакты</a> </div></div>
+                <a href="tel:+375291073461" class="menu__phone"> <i class="icon-phone"></i>+375 (29) 107-34-61</a>
+            </nav>
         </div>
     </header>
-    <main>
-        <section class="carousel">
-            <div id="main-carousel" class="carousel-wrapper owl-carousel">
-                <div class="carousel-item turkey">
-                    <div class="container">
-                        <div class="row">
-                            <div class="carousel-title">
-                                <h2>Отдых на море</h2>
-                                <h1>в турции</h1>
-                                <h3>Всего за 650 руб</h3> </div>
-                            <div class="carousel-desc-1"></div>
-                            <div class="carousel-desc-2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item egypt">
-                    <div class="container">
-                        <div class="row">
-                            <div class="carousel-title">
-                                <h2>Отдых на море</h2>
-                                <h1>в египте</h1>
-                                <h3>Всего за 750 руб</h3> </div>
-                            <div class="carousel-desc-1"></div>
-                            <div class="carousel-desc-2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item bulgaria">
-                    <div class="container">
-                        <div class="row">
-                            <div class="carousel-title">
-                                <h2>Отдых на море</h2>
-                                <h1>в болгарии</h1>
-                                <h3>Всего за 400 руб</h3> </div>
-                            <div class="carousel-desc-1"></div>
-                            <div class="carousel-desc-2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about-us" class="about-us">
-            <div class="container">
-                <div class="row text-center">
-                    <h4 class="about-title">о нас</h4>
-                    <p class="about-desc">Just Travel - мобильное туристическое агентство, которое работает по всей Беларуси. Just Travel это клуб друзей, которые помогают в любое время суток организовать незабываемый отпуск. Just Travel это Ваш персональный менеджер, который на профессиональном уровне управляет Вашим отдыхом. Путешествовать просто! Просто Just Travel.</p>
-                </div>
-            </div>
-        </section>
-        <section id="hot-tour" class="hot-tour">
-            <div class="container">
-                <div class="row text-center">
-                    <h4 class="hot-tour-title">горящие туры</h4>
-                    <div class="col-md-4 col-sm-6 hot-tour_tour"> <img src="img/tour-1.jpg" alt="">
-                        <div class="hot-tour_card">
-                            <h5 class="hot-tour_name">Отдых в Турции</h5>
-                            <p class="hot-tour_desc">Отель CONCORDIA CELES HOTEL 5*</p>
-                            <div class="hot-tour_star">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div> <span class="hot-tour_cost">от 625 руб</span> </div> <a href="#contacts" class="hot-tour_order">заказать</a>
-                        <div class="gradient"></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 hot-tour_tour"> <img src="img/tour-2.jpg" alt="">
-                        <div class="hot-tour_card">
-                            <h5 class="hot-tour_name">Отдых в Болгарии</h5>
-                            <p class="hot-tour_desc">Отель VCjntinental II 3*</p>
-                            <div class="hot-tour_star">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div> <span class="hot-tour_cost">от 400 руб</span> </div> <a href="#contacts" class="hot-tour_order">заказать</a>
-                        <div class="gradient"></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 hot-tour_tour"> <img src="img/tour-3.jpg" alt="">
-                        <div class="hot-tour_card">
-                            <h5 class="hot-tour_name">Отдых в Египте</h5>
-                            <p class="hot-tour_desc">Отель ROYAL ALBATROS MODERNA 5*</p>
-                            <div class="hot-tour_star">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div> <span class="hot-tour_cost">от 750 руб</span> </div> <a href="#contacts" class="hot-tour_order">заказать</a>
-                        <div class="gradient"></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 hot-tour_tour"> <img src="img/tour-4.jpg" alt="">
-                        <div class="hot-tour_card">
-                            <h5 class="hot-tour_name">Отдых в Испании</h5>
-                            <p class="hot-tour_desc">Отель Fortuna Lloret De Mair 3*</p>
-                            <div class="hot-tour_star">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div> <span class="hot-tour_cost">от 600 руб</span> </div> <a href="#contacts" class="hot-tour_order">заказать</a>
-                        <div class="gradient"></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 hot-tour_tour"> <img src="img/tour-5.jpg" alt="">
-                        <div class="hot-tour_card">
-                            <h5 class="hot-tour_name">Отдых в Греции</h5>
-                            <p class="hot-tour_desc">Отель Haris apartments 3*</p>
-                            <div class="hot-tour_star">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div> <span class="hot-tour_cost">от 550 руб</span> </div> <a href="#contacts" class="hot-tour_order">заказать</a>
-                        <div class="gradient"></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 hot-tour_tour"> <img src="img/tour-6.jpg" alt="">
-                        <div class="hot-tour_card">
-                            <h5 class="hot-tour_name">Отдых во Вьетнаме</h5>
-                            <p class="hot-tour_desc">Отель Golden rain 3*</p>
-                            <div class="hot-tour_star"> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> </div> <span class="hot-tour_cost">от 1300 руб</span> </div> <a href="#contacts" class="hot-tour_order">заказать</a>
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="advantages" class="advantages">
-            <div class="container">
-                <div class="row text-center">
-                    <h4 class="advantages_title">наши преимущества</h4>
-                    <p class="advantages_desc">Мы - первая в Беларуси мобильная туристическая компания</p>
-                    <div class="col-md-4 advantages_item">
-                        <div class="advantages_item_img"><img src="img/advantages-1.png" alt=""></div>
-                        <h5 class="advantages_item_title">Удобно</h5>
-                        <p class="advantages_item_desc">Теперь Вам не нужно ходить в офис агентства, для того, чтобы купить тур. Наш специалист приедет к Вам на встречу сам. Удобное место и время выбираете Вы. Подбор тура происходит в комфортных для Вас условиях.</p>
-                    </div>
-                    <div class="col-md-4 advantages_item">
-                        <div class="advantages_item_img"><img src="img/advantages-2.png" alt=""></div>
-                        <h5 class="advantages_item_title">Быстро</h5>
-                        <p class="advantages_item_desc">Мы имеем большую и что самое главное проверенную отельную базу. Многие отели проверены на личном опыте наших специалистов по туризму, которые смогут поделиться с Вами своими впечатлениями. Поэтому подбор тура не займет большого количества времени.</p>
-                    </div>
-                    <div class="col-md-4 advantages_item">
-                        <div class="advantages_item_img"><img src="img/advantages-3.png" alt=""></div>
-                        <h5 class="advantages_item_title">Качественно</h5>
-                        <p class="advantages_item_desc">В нашей компании работают специалисты с большим опытом работы и имеют высшее образование в сфере туризма и гостеприимства. Мы придерживаемся единого стандарта сервиса, для того, чтобы каждый турист стал нашим другом и возвращался к нам вновь и вновь.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="calculator" class="calculator">
-            <div class="container">
-                <div class="row">
-                    <h4 class="calculator_title">подбор тура</h4>
-                    <form action="mail.php" class="calculator-form" id="calculator-form">
-                        <div class="form-group">
-                            <label for="calculator-name">Ваше имя</label>
-                            <br>
-                            <input type="text" id="calculator-name" name="name" placeholder="Иван" required> </div>
-                        <div class="form-group">
-                            <label for="calculator-tel">Ваш телефон</label>
-                            <br>
-                            <input type="tel" id="calculator-tel" name="tel" placeholder="+375 (25) 111 11 11" required> </div>
-                        <div class="form-group">
-                            <label for="calculator-date">Вылет</label>
-                            <br>
-                            <input type="text" id="calculator-date" name="date" placeholder="31.04.2017"> <img class="calendar" src="img/calendar.png" alt=""></div>
-                        <div class="form-group">
-                            <label for="calculator-count-night">кол-во ночей</label>
-                            <br>
-                            <input type="number" id="calculator-count-night" name="countNight" placeholder="12"> </div>
-                        <div class="form-group">
-                            <label for="calculator-count-people">кол-во человек</label>
-                            <br>
-                            <input type="number" id="calculator-count-people" name="countPeople" placeholder="2"> </div>
-                        <div class="form-group">
-                            <label for="calculator-hotel">категория отеля</label>
-                            <br>
-                            <select name="calculatorHotel" id="calculator-hotel">
-                                <option selected value="5+ звезд">5+ звезд</option>
-                                <option value="5 звезд">5 звезд</option>
-                                <option value="4+ звезд">4+ звезд</option>
-                                <option value="4 звезды">4 звезды</option>
-                                <option value="3+ звезд">3+ звезд</option>
-                                <option value="3 звезд">3 звезд</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="calculator-food">питание</label>
-                            <br>
-                            <select name="calculatorFood" id="calculator-food">
-                                <option selected value="Всё включено">Всё включено</option>
-                                <option value="Завтрак, обед, ужин">Завтрак, обед, ужин</option>
-                                <option value="Завтрак + ужин">Завтрак + ужин</option>
-                                <option value="Без питания">Без питания</option>
-                            </select>
-                        </div>
-                        <input type="submit" value="Подобрать тур" class="calculator-submit"> </form>
-                </div>
-            </div>
-        </section>
-        <section id="response" class="response">
-            <div class="container">
-                <div class="row text-center">
-                    <h4 class="response_title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h4>
-                    <div id="response_carousel" class="response_carousel-wrapper">
-                        <div class="response_item"> <img src="img/reviews-1.jpg" alt="" class="response_item-img">
-                            <h6 class="response_item-name">Екатерина Мороз</h6>
-                            <div class="response_social">
-                                <a class="response_social-link" href="https://vk.com/id35626962" target="_blank">
-                                    <i class="icon-vkontakte"></i>
-                                </a>
-<!--
-                                <a class="response_social-link" href="https://vk.com/" target="_blank">
-                                    <i class="icon-facebook"></i>
-                                </a><a class="response_social-link" href="https://vk.com/" target="_blank">
-                                <i class="icon-instagram"></i>
-                                </a>
--->
-                            </div>
-                            <p class="response_text">Путешествовала с Just Travel в марте. Были в Египет. Увидела в ВК запись о том, что в Беларуси появилась, какое – то мобильное турагентсво. Написала менеджеру, мне предложили встретиться в кафе. Время и место выбирала я. Там же мы выбрали и забронировали тур. Спасибо за скидку и кучу подарков.</p>
-                        </div>
-                        <div class="response_item"> <img src="img/reviews-2.jpg" alt="" class="response_item-img">
-                            <h6 class="response_item-name">Николай Гнедько</h6>
-                            <div class="response_social">
-                                <a class="response_social-link" href="https://vk.com/id2042695" target="_blank">
-                                    <i class="icon-vkontakte"></i>
-                                </a>
-                            </div>
-                            <p class="response_text">Я увидел в интернете запись о мобильном турагентстве. Отдыхать ехать я не собирался, но меня все мучал вопрос – что это за турагентство такое. В
-
-общем, назначил встречу в кафе. Когда я пришел, меня встретил менеджер, на столе стояла для меня чашечка кофе. Молодой человек рассказывал мне про отели и различные курорты. Когда я уходил дали купон на скидку 5% на любой тур. В общем, интересная идея. Удачи.</p>
-                        </div>
-                        <div class="response_item"> <img src="img/reviews-3.jpg" alt="" class="response_item-img">
-                            <h6 class="response_item-name">Марина Иваненко</h6>
-                            <div class="response_social">
-                                <a class="response_social-link" href="https://vk.com/id25647618" target="_blank">
-                                    <i class="icon-vkontakte"></i>
-                                </a> 
-<!--
-                                <a class="response_social-link" href="https://www.instagram.com/justtravel.minsk/" target="_blank">
-                                    <i class="icon-instagram"></i>
-                                </a>
--->
-                            </div>
-                            <p class="response_text">Купила тур в Турцию на майские в Just Travel. С менеджером общались всегда через интернет. Присылали кучу разных предложений с разными ценами. Было реально из чего повыбирать. По совету JT остановились на Zena Resort 5*. Менеджер сказал, что лично там был.)) Договор и путевки привез курьер. Теперь у меня есть новый друг – Just Travel.</p>
-                        </div>
-                    </div>
-                    <h4 id="contacts" class="response_cta">готовы заказать тур?</h4>
-                    <p class="response_cta-desc">Оставьте свое имя и номер телефона,
-                        <br>и наш менеджер вам перезвонит</p>
-                    <form action="mail.php" id="cta-form" class="cta-form">
-                        <div class="form-group">
-                            <input type="text" id="cta-form-name" name="name" placeholder="Имя" required> </div>
-                        <div class="form-group">
-                            <input type="tel" id="cta-form-tel" name="tel" placeholder="Телефон" required> </div>
-                        <input type="submit" value="Заказать" class="calculator-submit"> </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
+    <section class="main-screen">
         <div class="container">
-            <div class="row text-center">
-                <div class="footer-wrap clearfix">
-                    <div class="col-md-3 col-sm-6 footer_item">
-                        <div class="footer_logo"></div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 footer_item">
-                        <p class="footer-desc">ИП Федоров А.С. УНП 192757609</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 footer_item footer-contacts--wrap">
-                        <div class="footer-contacts">
-                            <a href="mailto:justtravelemail@gmail.com" class="footer-mail">
-                                <i class="icon-mail"></i>Jt.minsk@gmail.com</a> 
-                            <a href="tel:+375 (25) 771-26-57" class="footer-phone">
-                                <i class="icon-phone"></i>+375 (25) 771-26-57</a>
+            <div class="main-screen__desc">
+                <h1>Эксклюзивная мебель</h1>
+                <p>Разрабатываем функциональную среду на кухне, в гостиной, прихожей и кабинете для вашего удобства</p>
+                <a href="#cta" class="main-screen__btn">рассчитать стоимость</a>
+            </div>
+            <div class="main-screen__social">
+                <a target="_blank" href="https://www.facebook.com/dima.semikozov/" class="icon-facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/4room_s_mebel/" class="icon-instagram"></a>
+                <a target="_blank" href="#" class="icon-vkontakte"></a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio__wrap">
+                <div class="portfolio__list">
+                   <div class="portfolio__mobile__title">
+                       <span class="subtitle">Найдите ваш интерьер</span>
+                    <h2>Наши работы</h2>
+                   </div>
+                    <ul>
+                        <li class="active">Кухни</li>
+                        <li>Гостиная</li>
+                        <li>Шкафы</li>
+                        <li>офисная мебель</li>
+                    </ul>
+                </div>
+                <div class="portfolio__img"> <span class="subtitle">Найдите ваш интерьер</span>
+                    <h2>Наши работы</h2>
+                    <div class="portfolio__img__slider active">
+                        <div class="portfolio__img__wrap">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="img/kitchen/kitchen-1.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-1.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-2.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-2.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-3.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-3.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-4.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-4.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-5.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-5.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-6.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-6.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-7.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-7.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-8.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-8.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-9.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-9.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-10.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-10.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-11.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-11.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-12.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-12.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-13.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-13.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-14.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-14.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-15.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-15.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-16.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-16.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-17.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-17.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-18.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-18.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-19.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-19.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-20.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-20.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-21.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-21.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-22.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-22.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-23.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-23.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-24.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-24.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-25.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-25.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-26.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-26.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-27.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-27.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-28.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-28.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-29.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-29.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-30.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-30.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-31.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-31.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-32.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-32.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-33.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-33.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-34.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-34.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-35.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-35.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/kitchen/kitchen-36.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/kitchen/kitchen-36.jpg)"></div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="footer_social">
-                            <a class="response_social-link" href="https://vk.com/justtravelby" target="_blank">
-                                <i class="icon-vkontakte"></i>
-                            </a> 
-                            <a class="response_social-link" href="https://www.instagram.com/justtravel.minsk/" target="_blank">
-                                <i class="icon-instagram"></i>
-                            </a>
+                        <div class="slider__controls">
+                            <div class="swiper-button-next icon-right-small"></div>
+                            <div class="swiper-button-prev icon-left-small"></div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 footer_item">
-                        <p class="footer-coppy"> © Все права защищены Just Travel, 2017 </p>
+                    <div class="portfolio__img__slider">
+                        <div class="portfolio__img__wrap">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="img/lounge/lounge-1.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-1.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/lounge/lounge-2.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-2.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/lounge/lounge-3.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-3.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/lounge/lounge-4.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-4.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/lounge/lounge-5.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-5.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/lounge/lounge-6.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-6.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/lounge/lounge-7.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-7.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/lounge/lounge-8.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/lounge/lounge-8.jpg)"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__controls">
+                            <div class="swiper-button-next icon-right-small"></div>
+                            <div class="swiper-button-prev icon-left-small"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio__img__slider">
+                        <div class="portfolio__img__wrap">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-1.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-1.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-2.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-2.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-3.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-3.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-4.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-4.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-5.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-5.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-6.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-6.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-7.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-7.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-8.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-8.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-9.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-9.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/wardrobe/wardrobe-10.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/wardrobe/wardrobe-10.jpg)"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__controls">
+                            <div class="swiper-button-next icon-right-small"></div>
+                            <div class="swiper-button-prev icon-left-small"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio__img__slider">
+                        <div class="portfolio__img__wrap">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="img/office/office-1.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-1.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/office/office-2.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-2.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/office/office-3.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-3.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/office/office-4.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-4.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/office/office-5.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-5.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/office/office-6.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-6.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/office/office-7.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-7.jpg)"></div>
+                                </a>
+                                <a class="swiper-slide" href="img/office/office-8.jpg">
+                                    <div class="portfolio__img__item icon-search" style="background-image: url(img/office/office-8.jpg)"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__controls">
+                            <div class="swiper-button-next icon-right-small"></div>
+                            <div class="swiper-button-prev icon-left-small"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="dev-cop"><a href="https://igor-peregudov.github.io/" target="_blank" title="Разработка сайта"><img src="img/ip.png" alt="Разработка сайта"></a></div>
+    </section>
+    <section class="sert">
+        <div class="container">
+            <div class="sert__desc"> <span class="subtitle">
+                    Нам доверяют
+                </span>
+                <h2>Сертифицированная<br>
+        компания</h2>
+                <p>Мы получили декларацию соответствия выпускаемой продукции. Это значит, что мебель от 4 Rooms полностью отвечает запросам: удобства, функциональности и безопасности.</p>
+            </div>
+            <div class="sert__img">
+                <a class="icon-search" href="img/sert.jpg"> <img src="img/sert.jpg" alt=""> </a>
+            </div>
+        </div>
+    </section>
+    <section class="advantages" id="advantages">
+        <div class="container"> <span class="subtitle">
+                Наши гарантии
+            </span>
+            <h2>Вы получите преимущества</h2>
+            <div class="advantages__item__wrap">
+                <div class="advantages__item"> <img src="img/advantage-1.png" alt="" class="advantages__item__img">
+                    <h3 class="advantages__item__title">Проект коммуникаций</h3>
+                    <p class="advantages__item__desc">С нами вы получаете проект вентканалов, водопровода и размещения розеток. Выслушаем ваши решения для увеличения удобства в готовом интерьере.</p>
+                </div>
+                <div class="advantages__item"> <img src="img/advantage-2.png" alt="" class="advantages__item__img">
+                    <h3 class="advantages__item__title">Гарантию на 2 года</h3>
+                    <p class="advantages__item__desc">Используем качественные материалы, поэтому мебель от 4 Rooms прослужит 10-20 лет. Для вашей уверенности, даём гарантию на 2 года. </p>
+                </div>
+                <div class="advantages__item"> <img src="img/advantage-3.png" alt="" class="advantages__item__img">
+                    <h3 class="advantages__item__title">Гибкие цены</h3>
+                    <p class="advantages__item__desc">Все расчеты прозрачные – кухни от 5000 руб. Гостиная, прихожая, кабинет – оцениваются при осмотре объекта. Стоимость зависит от вида материалов.</p>
+                </div>
+                <div class="advantages__item"> <img src="img/advantage-4.png" alt="" class="advantages__item__img">
+                    <h3 class="advantages__item__title">Уборку по окончании работ</h3>
+                    <p class="advantages__item__desc">Выполним уборку после себя. Вы получите готовую к использованию обстановку. Не нужно браться за тряпку или вызывать клинеров, всё готово к использованию.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="philosophy">
+        <div class="philosophy__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(img/philosophy_bg-1.jpg)">
+                    <div class="container">
+                        <div class="philosophy__desc"> <span class="subtitle">Почему обращаются к нам?</span>
+                            <h2>Полноценный подход</h2>
+                            <p>Работая с нами, вы получаете полный комплекс услуг из 4 блоков: консультацию по дизайну и выбору материалов; проектирование инженерных сетей и коммуникаций; качественную сборку и монтаж. После нас, остаётся готовый к жизни интерьер.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(img/philosophy_bg-2.jpg)">
+                    <div class="container">
+                        <div class="philosophy__desc"> <span class="subtitle">Почему обращаются к нам?</span>
+                            <h2>Применение современных решений</h2>
+                            <p>Мы следим за тенденциями в дизайне интерьеров и новинками на рынке фурнитуры, применяем современные высококачественные материал. Поэтому вы получаете эксклюзивную мебель с практически неограниченным сроком службы.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(img/philosophy_bg-3.jpg)">
+                    <div class="container">
+                        <div class="philosophy__desc"> <span class="subtitle">Почему обращаются к нам?</span>
+                            <h2>Опыт специалистов более 15 лет</h2>
+                            <p>Опыт, порождает знание дела, а знание дела – качество продукции и услуг. Мы делаем эксклюзивную мебель с 2000 года. Это говорит о нашем профессионализме и высокой компетенции.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="slider__controls">
+                    <div class="philosophy-button-next icon-right-small"></div>
+                    <div class="philosophy-button-prev icon-left-small"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners" id="partners">
+        <div class="container">
+            <div class="partners__desc"> <span class="subtitle">НАШИ ПАРТНЕРЫ</span>
+                <h2>Нам доверяют компании:</h2> </div>
+            <div class="partners__item__wrap">
+                <div class="partners__item">
+                    <div> <img src="img/partner-1.png" alt=""> </div>
+                    <p>Поставщик мебельной фурнитуры</p>
+                </div>
+                <div class="partners__item">
+                    <div> <img src="img/partner-2.png" alt=""> </div>
+                    <p>Производство изделий из камня</p>
+                </div>
+                <div class="partners__item">
+                    <div> <img src="img/partner-3.png" alt=""> </div>
+                    <p>Поставщик мебельной фурнитуры</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta" id="cta">
+        <div class="container">
+            <div class="cta__desc"> <span class="subtitle">Хотите эксклюзивный интерьер?</span>
+                <h2>Пора заказывать</h2>
+                <p>Оставьте ваши контакты в форме обратной связи.
+Наши менеджеры перезвонят вам в ближайшее время.</p>
+            </div>
+            <form action="mail.php" class="form">
+                <p class="form__title">Формы заказа</p> <span class="form__desc">Введите Ваше имя и телефон</span>
+                <label for="name">ваше имя
+                    <input type="text" name="name" required placeholder="Александр" /> </label>
+                <label for="tel">ваш ТЕЛЕФОН
+                    <input type="tel" name="tel" pattern="^[0-9\+\(\)\s-]+$" required placeholder="+375 (29) 111-11-11" /> </label>
+                <button type="submit">Отправить</button>
+                <div class="form__popup">
+                    Спасибо за заявку! Мы скоро свяжемся с Вами...
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <a href="/" class="footer__logo"> <img src="img/logo-b.png" alt=""> </a>
+            <a href="tel:+375291073461" class="footer__phone"> <i class="icon-phone"></i>+375 (29) 107-34-61</a>
+            <div class="main-screen__social">
+                <a target="_blank" href="https://www.facebook.com/dima.semikozov" class="icon-facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/4room_s_mebel/" class="icon-instagram"></a>
+                <a target="_blank" href="#" class="icon-vkontakte"></a>
+            </div> <span class="dev">
+                        Разработка сайта -<a target="_blank" href="https://igor-peregudov.github.io"><img src="img/dev.png" alt=""></a>
+                    </span> </div>
+        <p class="coppy">Все права защищены © 2017</p>
     </footer>
-    <div id="modal-popup" class="modal-popup">
-        <p onclick="event.stopPropagation()">Ваша заявка успешно отправлена<i class="icon-cancel-1"></i></p>
-    </div>
     <script src="js/libs.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
