@@ -59,8 +59,24 @@ $(document).ready(function(){
         tClose: false,
     };
     
+    var settingsPopupSert = {
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Загрузка...',
+        mainClass: 'mfp-img-mobile',
+        closeBtnInside: false,
+        closeOnContentClick: true,
+        tClose: false,
+        image: {
+			titleSrc: function(item) {
+                console.log(item);
+				return '<a style="color: #fff;" class="image-source-link" href="'+item.src+'" target="_blank">Открыть в полном размере</a>';
+			}
+		}
+    };
+    
     $('.portfolio__img__slider.active .portfolio__img__wrap .swiper-wrapper').magnificPopup(settingsPopup);
-    $('.sert__img').magnificPopup(settingsPopup);
+    $('.sert__img').magnificPopup(settingsPopupSert);
     
     var settingsSlider = {
         spaceBetween: 30,
